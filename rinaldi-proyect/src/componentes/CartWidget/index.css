@@ -1,0 +1,11 @@
+.cart-widget {
+  position: relative;
+}
+
+.pill {
+  position: absolute;
+  right: 0;
+  color: red;
+  font-size: 10px;
+  border-radius: 20px;
+}

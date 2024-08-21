@@ -1,0 +1,7 @@
+html,
+body {
+  height: 100%; /* Asegura que html y body ocupen el 100% del alto de la pantalla */
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
