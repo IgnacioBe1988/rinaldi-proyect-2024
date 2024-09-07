@@ -1,9 +1,0 @@
-/* Hoja de estilos globales*/
-
-@import "styles/index.css";
-
-/* Hoja de estilos de los componentes */
-
-@import "./componentes/NavBar/styles.css";
-@import "./componentes/CartWidget/index.css";
-@import "./componentes/ItemListContainer/index.css";
