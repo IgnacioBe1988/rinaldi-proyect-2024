@@ -1,13 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import BaseLayout from "./layout/BaseLayout";
-import ItemList from "./componentes/ItemList";
+import Home from "./pages/Home";
+import Store from "./pages/Store";
+import Detail from "./pages/Detail";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <BaseLayout>
-        <ItemList />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="store" element={<Store />} />
+          <Route exact path="detalle/:id" element={<Detail />} />
+          <Route exact path="store/categoria/:id" element={<Store />} />
+        </Routes>
       </BaseLayout>
-    </>
+    </BrowserRouter>
   );
 }
 

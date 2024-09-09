@@ -6,15 +6,15 @@ const Header = () => {
   const links = [
     {
       label: "Home",
-      href: "#",
+      href: "/",
     },
     {
       label: "Tienda",
-      href: "#",
+      href: "/store",
     },
     {
       label: "Contacto",
-      href: "#",
+      href: "/contacto",
     },
   ];
 

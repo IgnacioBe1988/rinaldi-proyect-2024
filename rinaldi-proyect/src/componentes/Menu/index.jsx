@@ -1,20 +1,24 @@
+import { NavLink } from "react-router-dom";
 import LinkButton from "../LinkButton";
 
 const Menu = ({ links, className, children }) => {
   return (
     <menu className={`menu ${className}__menu`}>
-      {links.map((link) => (
-        <li className={`menu__item ${className}__item`}>
-          (
+      {links.map((link, i) => {
+        return (
+          <li key={`navlink-${i}`} className={`menu__item ${className}__item`}>
+            <NavLink to={link.href}>{link.label}</NavLink>
+
+            {/* (
           <LinkButton
-            key={link.href} // Usa un identificador único para la clave
             className={className}
             href={link.href}
             label={link.label}
           />
-          )
-        </li>
-      ))}
+          ) */}
+          </li>
+        );
+      })}
       {children}
     </menu>
   );
