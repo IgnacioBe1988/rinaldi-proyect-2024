@@ -1,0 +1,90 @@
+@import "../../styles/mixins";
+
+// Definir tamaño mediano para las imágenes
+$img-size: 200px; // Ajusta este valor según tus necesidades
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &__picture {
+    $self: &;
+    @include flex(row, space-around, center);
+    position: relative;
+    width: $img-size; // Define un ancho específico para las imágenes
+    height: $img-size; // Define un alto específico para las imágenes
+
+    &--pill {
+      display: block;
+      position: absolute;
+      top: 10px; // Ajustado para un mejor posicionamiento
+      right: 10px; // Ajustado para un mejor posicionamiento
+      font-weight: 600;
+      padding: 0.5rem 1rem; // Ajustado para un tamaño más adecuado
+      background-color: #ff5722; // Ejemplo de color de fondo
+      color: white; // Color del texto
+      border-radius: 12px; // Borde redondeado para el "pill"
+      font-size: 12px; // Ajuste de tamaño de fuente
+    }
+
+    &--img {
+      width: 100%; // Ajusta la imagen al ancho del contenedor
+      height: 100%; // Ajusta la imagen al alto del contenedor
+      object-position: center;
+      object-fit: contain; // Ajusta la imagen dentro del contenedor
+      animation: fade 0.7s;
+    }
+
+    &--img--2 {
+      display: none;
+    }
+
+    &:hover .item__picture--img--1 {
+      display: none;
+    }
+    &:hover .item__picture--img--2 {
+      animation: fade 0.7s;
+      display: block;
+    }
+  }
+
+  a {
+    font-size: inherit;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__info {
+    padding: 1rem; // Ajusta el padding para que no ocupe tanto espacio
+    @include flex(column, center, flex-start);
+    gap: 0.5rem; // Ajusta el espacio entre elementos
+    &--title {
+      font-weight: 400;
+    }
+    &--item {
+      font-weight: bold;
+    }
+    &--price {
+      font-size: 1.2rem; // Ajusta el tamaño del texto del precio
+    }
+    &--dues {
+      font-weight: bold;
+      font-size: 0.9rem; // Ajusta el tamaño del texto para las cuotas
+    }
+  }
+}
+
+// Añade la animación fade si aún no la tienes definida
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

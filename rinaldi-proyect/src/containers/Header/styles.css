@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.header {
+  padding: 40px 0;
+  background-color: #e0c98d; /* Amarillo cálido */
+  display: flex;
+  justify-content: center; /* Centrar el contenido en el header */
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Ajusta según sea necesario */
+  padding: 0 20px; /* Espaciado lateral */
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Para mantener el color del texto del título igual al del logo */
+}
+.navbar__img {
+  margin-right: 10px; /* Espacio entre el logo y el título */
+}
+.navbar__item {
+  padding: 0.8rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  color: rgb(202, 73, 73);
+}
+.navbar__item:hover {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+}
+.navbar__title {
+  font-size: 1.8rem; /* Tamaño del título */
+  font-weight: bold;
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */

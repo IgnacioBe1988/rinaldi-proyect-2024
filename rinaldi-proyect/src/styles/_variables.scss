@@ -1,0 +1,28 @@
+$color-background: #f5f5f5;
+$color-text: #333333;
+$color-title: #111111;
+$color-button: #007bff;
+$color-button-hover: #0056b3;
+$color-border: #e0e0e0;
+$color-card-bg: #ffffff;
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-title;
+}
+
+button {
+  background-color: $color-button;
+  &:hover {
+    background-color: $color-button-hover;
+  }
+}

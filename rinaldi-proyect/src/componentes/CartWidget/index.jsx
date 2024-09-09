@@ -1,10 +1,11 @@
 import { Icon } from "@iconify/react";
+import Pill from "../Pill/index";
 
-const CartWidget = () => {
+const CartWidget = ({ quantity }) => {
   return (
     <div className="cart-widget">
-      <span className="pill">1</span>
-      <Icon className="cart-widget__cart" icon="vaadin:cart" />
+      <Pill quantity={quantity} />
+      <Icon className="cart-widget__cart" icon="clarity:shopping-cart-solid" />
     </div>
   );
 };

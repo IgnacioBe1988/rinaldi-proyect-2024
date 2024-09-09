@@ -1,10 +1,11 @@
 import BaseLayout from "./layout/BaseLayout";
+import ItemList from "./componentes/ItemList";
 
 function App() {
   return (
     <>
       <BaseLayout>
-        <main>Contenido</main>
+        <ItemList />
       </BaseLayout>
     </>
   );

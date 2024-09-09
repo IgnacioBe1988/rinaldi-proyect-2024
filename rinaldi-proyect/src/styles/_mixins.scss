@@ -1,0 +1,42 @@
+// _mixins.scss
+
+// Mixin para un botón
+@mixin button-styles($bg-color, $hover-color) {
+  background-color: $bg-color;
+  border: none;
+  color: #ffffff;
+  padding: $spacing-unit / 2 $spacing-unit;
+  border-radius: $border-radius;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+// Mixin para centrar un elemento
+@mixin center-content() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Mixin para el espaciado
+@mixin spacing(
+  $top: $spacing-unit,
+  $right: $spacing-unit,
+  $bottom: $spacing-unit,
+  $left: $spacing-unit
+) {
+  margin: $top $right $bottom $left;
+}
+
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

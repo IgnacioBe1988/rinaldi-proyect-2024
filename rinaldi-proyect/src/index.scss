@@ -1,14 +1,18 @@
-/* Hoja de estilos globales de la carpeta styles*/
+// GLOBALES
 
-@import "styles/mixins";
-@import "styles/reset";
-@import "styles/shared";
-@import "styles/styles.scss";
+@import "styles/_mixins";
+@import "styles/_reset";
+@import "styles/_shared";
+@import "styles/_variables";
 
-// @import "styles/styles.scss";
+// CONTAINERS
 
-// /* Hoja de estilos de los componentes */
+@import "./containers/Header/styles.scss";
 
-// @import "./componentes/NavBar/styles.scss";
-// @import "./componentes/CartWidget/styles.scss";
-// @import "./componentes/ItemListContainer/styles.scss";
+// COMPONENTES
+
+@import "./componentes/LinkButton/styles.scss";
+@import "./componentes/Menu/styles.scss";
+@import "./componentes/CartWidget/styles.scss";
+@import "./componentes/Item/styles.scss";
+@import "./componentes/ItemList/styles.scss";

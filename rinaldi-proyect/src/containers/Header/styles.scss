@@ -1,0 +1,46 @@
+.header {
+  padding: 40px 0;
+  background-color: #e0c98d; /* Amarillo cálido */
+  display: flex;
+  justify-content: center; /* Centrar el contenido en el header */
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Ajusta según sea necesario */
+  padding: 0 20px; /* Espaciado lateral */
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Para mantener el color del texto del título igual al del logo */
+  }
+
+  &__img {
+    margin-right: 10px; /* Espacio entre el logo y el título */
+  }
+
+  &__item {
+    padding: 0.8rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    color: rgb(202, 73, 73);
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border-radius: 4px;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem; /* Tamaño del título */
+    font-weight: bold;
+    margin: 0;
+  }
+}

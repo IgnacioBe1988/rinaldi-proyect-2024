@@ -1,10 +1,10 @@
+import Header from "../containers/Header/index";
+
 const BaseLayout = ({ children }) => {
   return (
     <>
-      <header>
-        <p>Header del site</p>
-      </header>
-      <main>{children}</main>
+      <Header />
+      {children}
       <footer>
         <p>Footer del site</p>
       </footer>

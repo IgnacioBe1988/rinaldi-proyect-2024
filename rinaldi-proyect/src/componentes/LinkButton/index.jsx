@@ -1,6 +1,10 @@
-const LinkButton = ({ ClassName, label, href = "#", ...props }) => {
+const LinkButton = ({ className, label, href = "#", ...props }) => {
   return (
-    <a {...props} href={href}>
+    <a
+      {...props}
+      className={`link-button ${className}__link-button`}
+      href={href}
+    >
       {label}
     </a>
   );
